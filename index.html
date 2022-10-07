@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadows</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Reem+Kufi+Fun:wght@400;700&family=Rubik:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Box Shadows</h1>
+  </header>
+  <div class="all">
+    <div class="properties">
+      <div> 
+        <p>Dezplazamiento horizontal</p>
+        <input id="desplazamientoh" type="range" min="-100" max="100" value="10"> 
+      </div>
+      <div> 
+        <p>Dezplazaminto vertical</p>
+        <input id="desplazamientov" type="range" min="-100" max="100" value="10">
+      </div>
+      <div> 
+        <p>Blur radius</p>
+        <input id="radiusb" type="range" min="0px" max="100px" value="5">
+      </div>
+      <div> 
+        <p>Spread radius</p>
+        <input id="radiuss" type="range" min="0px" max="100px" value="5">
+      </div>
+      <div> 
+        <p>Color de la sombra</p>
+        <input id="color" type="color" value="#87807E">
+      </div>
+      <div> 
+        <p>Tamaño</p>
+        <input id="tamaño" type="range" min="5px" max="400px"> 
+      </div>
+      <div> 
+        <p>Border radius</p>
+        <input id="border" type="range" min="0px" max="100px">
+      </div>
+    </div>
+    <div class="content">
+      <div id="box" class="box"></div>
+      <div class="info">
+        <div> BoxShadow: 
+          <p id="labeldh">10px</p>
+          <p id="labeldv" >10px</p>
+          <p id="labelbr" >5px</p>
+          <p id="labelsr" >5px</p>
+          <p id="labelcs" >#87807E</p>
+          <div class="infobox"> Box:
+            <p id="labelt" >150px</p>
+            <p id="labelbrr" >5px</p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <script : src="./app.js" ></script>
+</body>
+</html>
